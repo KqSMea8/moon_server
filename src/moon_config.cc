@@ -90,7 +90,7 @@ bool moon_config_t::daemon() {
     int fd;
 
     if (!is_daemon) {
-        g_logger.error("server run in no daemon mode...");
+        g_logger.notice("server run in no daemon mode...");
         return true;
     }
 

@@ -66,7 +66,7 @@ int main(int argc, char* argv[]) {
         return -1;
     }
 
-    if (moon::g_config.daemon()) {
+    if (!moon::g_config.daemon()) {
         moon::g_logger.error("daemon fail");
         return -1;
     }
